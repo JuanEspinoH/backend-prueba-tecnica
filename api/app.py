@@ -43,7 +43,7 @@ with app.app_context():
 @app.route("/")
 def hello_world():
 
-    return jsonify({"test":"pruebas"}),200
+    return 'Hello, World!'
 
 @app.route("/register",methods=["POST"])
 def register():
