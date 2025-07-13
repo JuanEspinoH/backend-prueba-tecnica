@@ -3,7 +3,7 @@ import re
 import uuid
 from datetime import timedelta
 from flask import Flask, request, jsonify
-from models import db,Usuario,Tarea
+from .models import db,Usuario,Tarea
 from flask_migrate import Migrate
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
