@@ -48,7 +48,7 @@ def hello_world():
 def api():
     return 'Hello, World!'
 
-@app.route("/api/register",methods=["POST"])
+@app.route("/register",methods=["POST"])
 def register():
     try:
         data=request.get_json()
