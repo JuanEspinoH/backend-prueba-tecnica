@@ -42,7 +42,10 @@ with app.app_context():
 
 @app.route("/")
 def hello_world():
+    return 'Hello, World!'
 
+@app.route("/api")
+def api():
     return 'Hello, World!'
 
 @app.route("/register",methods=["POST"])
