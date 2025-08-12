@@ -66,7 +66,7 @@ def register():
             }),400
         elif len(username) > 50:
             return jsonify({
-                "msg":"El nombre de usuario no debe de ser mayor a 15 caracteres"
+                "msg":"El nombre de usuario no debe de ser mayor a 50 caracteres"
             }),400
         
         if email is None  or email == "":
@@ -79,7 +79,7 @@ def register():
             }),400
         elif len(email) > 50:
             return jsonify({
-                "msg":"El email no debe de ser mayor a 20 caracteres"
+                "msg":"El email no debe de ser mayor a 50 caracteres"
             }),400
         elif bool(re.match(r'^[\w\.-]+@[\w\.-]+\.\w+$',email )) ==False:
             return jsonify({
@@ -142,7 +142,7 @@ def login():
                 }),400
         elif len(email) > 50:
                 return jsonify({
-                    "msg":"El email no debe de ser mayor a 20 caracteres"
+                    "msg":"El email no debe de ser mayor a 50 caracteres"
                 }),400
         elif bool(re.match(r'^[\w\.-]+@[\w\.-]+\.\w+$',email )) ==False:
                 return jsonify({
