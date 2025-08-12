@@ -55,7 +55,6 @@ def register():
         username=data.get("username")
         email=data.get("email")
         password=data.get("password")
-        # Validaciones, si existe el campo,el tipo sea string, la longitud y si el email tiene formato correcto  
         if username is None  or username == "":
             return jsonify({
                 "msg":"Falta el nombre de usuario"
