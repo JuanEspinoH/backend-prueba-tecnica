@@ -64,7 +64,7 @@ def register():
             return jsonify({
                 "msg":"El nombre debe de ser texto"
             }),400
-        elif len(username) > 15:
+        elif len(username) > 50:
             return jsonify({
                 "msg":"El nombre de usuario no debe de ser mayor a 15 caracteres"
             }),400
@@ -77,7 +77,7 @@ def register():
             return jsonify({
                 "msg":"El email no debe de ser texto"
             }),400
-        elif len(email) > 20:
+        elif len(email) > 50:
             return jsonify({
                 "msg":"El email no debe de ser mayor a 20 caracteres"
             }),400
@@ -140,7 +140,7 @@ def login():
                 return jsonify({
                     "msg":"El email no debe de ser texto"
                 }),400
-        elif len(email) > 20:
+        elif len(email) > 50:
                 return jsonify({
                     "msg":"El email no debe de ser mayor a 20 caracteres"
                 }),400
