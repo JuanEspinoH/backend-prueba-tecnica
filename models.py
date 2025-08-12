@@ -9,7 +9,7 @@ db = SQLAlchemy()
 class Usuario(db.Model):
     __tablename__="usuarios"
     id = db.Column(db.Integer, primary_key=True)
-    username=db.Column(db.String(15),nullable=False)
+    username=db.Column(db.String(50),nullable=False)
     email=db.Column(db.String(20),nullable=False,unique=True)
     password=db.Column(db.String,nullable=False)
     token=db.Column(db.String,nullable=False,default="")
